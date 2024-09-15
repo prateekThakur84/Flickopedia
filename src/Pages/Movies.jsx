@@ -60,10 +60,14 @@ const Movies = () => {
   }, [query, page]);
 
   return (
+    <>
+     {loading && <Loading />}
     <div className="bg-slate-700 min-h-screen p-4">
-      {loading && <Loading />}
+     
 
-      <SearchBar onSearch={handleSearch} />
+        {
+          !loading && <SearchBar onSearch={handleSearch} />
+        }
 
       {error && <p className="text-red-500 flex items-center justify-center">{error}</p>}
 
@@ -81,6 +85,7 @@ const Movies = () => {
         </div>
       )}
     </div>
+    </>
   );
 };
 
