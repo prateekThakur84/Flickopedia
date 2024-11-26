@@ -1,41 +1,37 @@
 const About = () => {
   return (
-    <section className="bg-gray-900 py-12 text-white">
+    <section className="bg-white dark:bg-gray-900 py-12">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 
+        {/* Section Header */}
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-yellow-400">
+          <h1 className="text-4xl font-bold text-tblack dark:text-yellow-400">
             About Flickopedia
           </h1>
-          <p className="mt-4 text-gray-300 text-lg">
-            Discover everything you need to know about your favorite films and
-            shows.
+          <p className="mt-4 text-tblue font-bold dark:text-gray-300 text-lg">
+            Discover everything you need to know about your favorite films and shows.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-
+          {/* Mission and Vision Statements */}
           <div>
-            <h2 className="text-2xl font-semibold text-yellow-400 mb-4">
+            <h2 className="text-2xl font-bold dark:text-yellow-400 mb-4">
               Our Mission
             </h2>
-            <p className="text-gray-400 mb-6">
-              At Flickopedia, we bring you the most comprehensive database of
-              movie details, cast information, reviews, and ratings. We aim to
-              provide movie lovers with all the information they need in one
-              place.
+            <p className="text-tblack dark:text-white mb-6 font-semibold">
+              At Flickopedia, we bring you the most comprehensive database of movie details, cast information, reviews, and ratings. We aim to provide movie lovers with all the information they need in one place.
             </p>
 
-            <h2 className="text-2xl font-semibold text-yellow-400 mb-4">
+            <h2 className="text-2xl font-bold dark:text-yellow-400 mb-4">
               Our Vision
             </h2>
-            <p className="text-gray-400">
-              We envision Flickopedia as the ultimate destination for movie
-              enthusiasts to explore, learn, and discover new films while diving
-              deep into their favorite flicks.
+            <p className="text-tblack dark:text-white font-semibold">
+              We envision Flickopedia as the ultimate destination for movie enthusiasts to explore, learn, and discover new films while diving deep into their favorite flicks.
             </p>
           </div>
 
+          {/* Flickopedia Logo Image */}
           <div className="flex justify-center items-center">
             <div className="w-full h-64 bg-gray-700 rounded-lg flex justify-center items-center overflow-hidden">
               <figure className="w-full h-full">
@@ -50,7 +46,7 @@ const About = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-12">
-
+          {/* Entertainment Image */}
           <div className="flex justify-center items-center">
             <div className="w-full h-64 bg-gray-700 rounded-lg flex justify-center items-center overflow-hidden">
               <figure className="w-full h-full">
@@ -63,11 +59,12 @@ const About = () => {
             </div>
           </div>
 
+          {/* Why Choose Flickopedia */}
           <div>
-            <h2 className="text-2xl font-semibold text-yellow-400 mb-4">
+            <h2 className="text-2xl font-bold dark:text-yellow-400 mb-4">
               Why Choose Flickopedia?
             </h2>
-            <ul className="list-disc list-inside text-gray-400 space-y-4">
+            <ul className="list-disc list-inside dark:text-white text-tblack space-y-4 font-semibold">
               <li>Information about movies from all genres.</li>
               <li>Up-to-date news on upcoming films and releases.</li>
               <li>Extensive cast and crew details for every title.</li>
@@ -77,10 +74,11 @@ const About = () => {
           </div>
         </div>
 
+        {/* Call to Action */}
         <div className="text-center mt-12">
-          <p className="text-lg text-gray-400">
+          <p className="text-lg text-tblack dark:text-white">
             Ready to explore the world of movies?{" "}
-            <span className="font-semibold text-yellow-400">
+            <span className="font-semibold text-tblue">
               Explore Flickopedia now!
             </span>
           </p>

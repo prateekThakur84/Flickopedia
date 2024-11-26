@@ -2,7 +2,7 @@ import "./Loading.css";
 
 export const Loading = () => {
     return (
-        <div className="h-screen w-screen flex items-center justify-center bg-gray-700">
+        <div className="h-screen w-screen flex items-center justify-center dark:bg-gray-700 bg-white">
             <div aria-label="Orange and tan hamster running in a metal wheel" role="img" className="wheel-and-hamster">
                 <div className="wheel"></div>
                 <div className="hamster">

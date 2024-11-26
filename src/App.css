@@ -1,3 +1,14 @@
- a.active{
-  color: #FCD34D;
+a.active {
+  color: "#fcfb00";
 }
+
+/* App.css */
+.hover-text-shadow {
+  transition: text-shadow 0.5s ease;
+}
+
+.hover-text-shadow:hover {
+  text-shadow: 4px -4px 10px rgba(3, 79, 253, 1)
+  ; /* Black shadow */
+}
+
